@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Z-Project</title>
+	<link rel="icon" href="/images/favicon.svg">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/fonts.css">
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-6 col-md-7 order-1">
+					<div class="header__logo-part">
+						<div class="header__logo">
+							<img src="/images/logo.svg" alt="Герб Российской Федерации">
+						</div>
+						<div class="header__attr">
+							<p>Министерство обороны Российской Федерации</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-12 order-3 order-xl-3 mt-3 mt-xl-0 d-md-block d-none">
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">Выплаты</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">Соцподдержка</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">Вакансии</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="/" data-toggle="modal" data-target=".modal--doc"class="header__menu-link">Заказать справку</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="" class="header__menu-link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-xl-2 col-lg-6 col-md-5 order-2 order-xl-3 d-flex justify-content-between align-items-center mt-3 mt-md-0 ">
+					<a class="header__phone" href="tel:+74932329327">+7 (4932) 32-93-27</a>
+					<a href="/" data-toggle="modal" data-target=".modal--doc"class="header__menu-link d-block d-md-none">Заказать справку</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section class="front-screen">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-8">
+						<h1 class="front-title">Есть такая профессия <span>-&nbsp;Родину защищать</span></h1>
+						<a class="default-link default-link--front-screen" href="/some-url">Узнать индивидуальные условия</a>
+						<div class="front-screen__cards">
+							<div class="front-screen__card item-card">
+								<p class="item-card__title">245 000 ₽</p>
+								<div class="item-card__text">единовременная выплата при заключении контракта</div>
+							</div>
+							<div class="front-screen__card item-card">
+								<p class="item-card__title">от 204 000 ₽</p>
+								<div class="item-card__text">ежемесячное денежное довольствие в зоне СВО</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<!-- modal -->
+		<div class="modal fade modal--doc show" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+                <div class="modal-overflow">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal-title">Заказать <br><span>справку</span></div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L11 11M21 21L11 11M11 11L1 21M11 11L21 1" stroke="#333333"></path>
+                                </svg>    
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                            <input type="hidden" name="form_name" value="Записаться на тренировку">
+                                <label>
+                                    <span>Имя</span>
+                                    <input type="text" name="name" required="" placeholder="Введите ваше имя">
+                                </label>
+                                <label>
+                                    <span>Телефон</span>
+                                    <input type="tel" name="phone" required="" placeholder="+7 (900) 000-00-00">
+                                </label>
+                                <button class="modal-btn ">Заказать справку</button>
+                                <label class="form-accept">
+                                    <input checked="" type="checkbox">
+                                    <span>Я соласен с политикой конфиденциальности</span>
+                                </label>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- modal -->
+	</footer>
+	<script src="/include/jquery-3.7.0.min.js"></script>
+	<script src="/include/bootstrap.min.js"></script>
+	<script src="/js/script.js"></script>
+</body>
+</html>

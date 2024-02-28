@@ -288,6 +288,28 @@ header {
     border: none;
     background:none;
 }
+.form-accept input + span::before {
+    content: '';
+    width: 21px;
+    height: 21px;
+    border-radius: 4px;
+    background-color: var(--color-accent-green);
+    left: -32px;
+    position: absolute;
+    top: -2px;
+}
+.form-accept input:checked + span::after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 13px;
+    transform: rotate(226deg);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    left: -25px;
+    top: 0px;
+    border-radius: 2px;
+}
 @media(max-width:1399px){
     .header__phone{
         font-size:17px ;

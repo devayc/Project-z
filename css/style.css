@@ -1008,6 +1008,14 @@ header {
     font-size: 16px;
     text-align: right;
     color: var(--color-white);
+
+}
+.contact__map{
+    height: 100%;
+}
+.contact__map > iframe{
+    border-radius: 17px;
+    min-height: 100%;
 }
 @media(max-width:1399px){
     .header__phone{

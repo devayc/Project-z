@@ -1017,6 +1017,9 @@ header {
     border-radius: 17px;
     min-height: 100%;
 }
+.question__item-answer a{
+    color: var(--color-accent-green);
+}
 @media(max-width:1399px){
     .header__phone{
         font-size:17px ;
@@ -1248,5 +1251,8 @@ header {
      .contact__card-item-icon svg{
         width: 45px;
         height: 45px;
+     }
+     .question__item-quest p,.question__item-quest.active p{
+        font-size: 14px;
      }
 }

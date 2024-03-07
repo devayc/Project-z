@@ -855,11 +855,14 @@ header {
 .own__image {
     position: relative;
     height: 100%;
+    overflow: hidden;
+    border-radius: 17px;
 }
 .own__image img{
     max-width: 100%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .own__image p{
     position: absolute;
@@ -1235,6 +1238,7 @@ header {
     }
     .own__image p{
         font-size: 45px;
+        max-width: 450px;
     }
     .own__item{
         flex-direction: column;

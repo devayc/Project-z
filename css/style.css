@@ -1381,4 +1381,10 @@ header {
      .own__item-data::after{
         content: none;
      }
+     .family-support__content-default:nth-child(3){
+        grid-area: 2/1;
+    }
+    .family-support__content-default:nth-child(7){
+        grid-area: 4/1;
+    }
 }

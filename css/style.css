@@ -139,7 +139,7 @@ header {
 }
 
 .front-screen{
-   padding-bottom: 50px;
+   padding-bottom: 200px;
    position: relative;
 }
 .front-screen::before{
@@ -548,6 +548,7 @@ header {
 }
 .prize__card img{
     max-width: 100%;
+    object-fit: contain;
 }
 .prize .row:nth-child(2){
     gap: 24px 0;
@@ -653,7 +654,15 @@ header {
     position: relative;
     padding: 40px 50px;
 }
-
+.benefits__card-quote::after{
+    content: '';
+    position: absolute;
+    right: -20%;
+    top: 10px;
+    width: 1px;
+    height: 111px;
+    background: var(--color-background-gray);
+}
 .benefits__card-quote__top{
     position: absolute;
     left: 0;
@@ -837,6 +846,11 @@ header {
     padding: 80px 0;
     background: var(--color-white);
 }
+.own .section-title{
+    max-width: 885px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .own__item{
     padding: 40px 35px;
     display: flex;
@@ -845,11 +859,21 @@ header {
     background: var(--color-background-gray);
     border-radius: 17px;
 }
+.own__item-data::after {
+    content: '';
+    position: absolute;
+    right: -25%;
+    top: -4px;
+    width: 1px;
+    height: 30px;
+    background: #dbdbdb;
+}
 .own__item-data{
     font-weight: 600;
     font-size: 18px;
     letter-spacing: -0.01em;
     color: var(--color-accent-green);
+    position: relative;
 }
 .own__item-text{
     font-weight: 400;
@@ -907,6 +931,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 19px 40px;
+    gap: 50px;
 }
 .question__item-quest__icon{
     min-width: 52px;
@@ -914,7 +939,7 @@ header {
 }
 .question__item-quest p{
     font-weight: 400;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 130%;
     letter-spacing: -0.02em;
     color: var(--color-text-black);
@@ -924,6 +949,7 @@ header {
 }
 .question__item-quest:hover p{ 
     color: var(--color-accent-green);
+    font-weight: 600;
 }
 .question__item-quest:hover circle{ 
     fill: var(--color-accent-green);
@@ -1031,7 +1057,7 @@ header {
 }
 @media(max-width:1399px){
     .header__phone{
-        font-size:17px ;
+        font-size:19px ;
     }
     .header__menu-list{
         gap: 17px;
@@ -1045,6 +1071,12 @@ header {
     }
     .vacancy__image__text{
         bottom: 55px;
+    }
+    .header__attr p{
+        font-size: 14px;
+    }
+    .item-card__title{
+        font-size: 36px;
     }
 }
 @media(max-width:1199px){
@@ -1074,14 +1106,73 @@ header {
      .vacancy__image__text{
         bottom: 34px;
     }
-}
-@media(max-width:991px){
-    .front-screen{
-        padding-bottom: 601px;
+    .header__logo img{
+        max-width: 102px;
+    }
+    .header__logo-part{
+        gap: 10px;
+    }
+    .header__attr{
+        margin-left: 40px;
+    }
+    .header__logo:not(:first-child):after{
+        top: 26px;
     }
     .front-title{
         font-size: 50px;
     }
+    .front-screen__cards{
+        max-width: 480px;
+    }
+    .requirement__item p{
+        font-size: 16px;
+    }
+    .requirement__button{
+        font-size: 14px;
+    }
+    .contract__call-title{
+        font-size: 16px;
+    }
+    .contract__call-link{
+        font-size: 20px;
+    }
+    .payments__before-list{
+        font-size: 16px;
+    }
+    .family-support__content-default:nth-child(3){
+        grid-area: 2/2;
+    }
+    .family-support__content-default:nth-child(7){
+        grid-area: 4/2;
+    }
+    .family-support__content-big-image, .family-support__content-default:nth-child(11){
+        display: none;
+    }
+    .family-support__content-big-text {
+        grid-area: 6 / 1 / 6 / 3;
+    }
+    .requirement__item p{
+        font-size: 15px;
+    }
+    .benefits__item{
+        padding: 20px 0 20px 60px;
+    }
+    .vacancy .section-sub-title{
+        font-size: 18px;
+    }
+    .vacancy__item{
+        font-size: 15px;
+    }
+    .vacancy__image__text__title{
+        font-size: 21px;
+    }
+
+}
+@media(max-width:991px){
+    .front-screen{
+        padding-bottom: 32px;
+    }
+   
     .contract__images > img{
         width: 100%;
     }
@@ -1093,11 +1184,14 @@ header {
         gap: 30px;
     }
     .vacancy__content .vacancy__content-item{
-        order: 2;
+        order: 1;
         flex: 1 1 calc(50% - 30px );
     }
+    .vacancy__content .vacancy__content-item:nth-child(3){
+        order: 2;
+    }
     .vacancy__content .vacancy__content-item:nth-child(2){
-        order: 1;
+        order: 3;
         flex: 1  1 auto;
         margin-bottom: 0;
     }
@@ -1109,6 +1203,25 @@ header {
     }
     .vacancy .section-sub-title{
         margin-bottom: 0;
+    }
+    .benefits__card-quote::after{
+        content: none;
+    }
+    .front-title{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+    .default-link--front-screen{
+        margin-bottom: 52px;
+    }
+    h2{
+        font-size: 36px;
+    }
+    .front-screen__cards{
+        max-width: 365px;
+    }
+    .payments__button {
+        margin: 0 auto;
     }
 }
 @media(max-width:767px){
@@ -1264,5 +1377,8 @@ header {
      }
      .question__item-quest p,.question__item-quest.active p{
         font-size: 14px;
+     }
+     .own__item-data::after{
+        content: none;
      }
 }

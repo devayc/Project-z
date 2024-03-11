@@ -1262,7 +1262,7 @@ header {
     }
     .family-support__content-big-text {
         margin-top: -10px;
-        grid-area: 14 / 1 / 15 / 2;
+        grid-area: 11 / 1 / 12 / 2;
      }
      .family-support__content{
         grid-auto-rows: auto;
